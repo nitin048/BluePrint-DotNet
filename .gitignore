@@ -454,6 +454,3 @@ $RECYCLE.BIN/
 !.vscode/extensions.json
 .vs/BluePrintAPI/v17/.suo
 *.cache
-BluePrintAPI/obj/Debug/net5.0/BluePrintAPI.csproj.AssemblyReference.cache
-BluePrintCore/obj/Debug/net5.0/BluePrintCore.csproj.AssemblyReference.cache
-BluePrintBL/obj/Debug/net5.0/BluePrintBL.csproj.AssemblyReference.cache
