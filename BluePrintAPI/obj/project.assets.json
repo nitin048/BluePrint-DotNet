@@ -1,37 +1,105 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "BluePrintBL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BluePrintCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BluePrintBL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BluePrintBL.dll": {}
+        }
+      },
+      "BluePrintCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BluePrintDAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BluePrintCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BluePrintCore.dll": {}
+        }
+      },
+      "BluePrintDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/BluePrintDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BluePrintDAL.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BluePrintBL/1.0.0": {
+      "type": "project",
+      "path": "../BluePrintBL/BluePrintBL.csproj",
+      "msbuildProject": "../BluePrintBL/BluePrintBL.csproj"
+    },
+    "BluePrintCore/1.0.0": {
+      "type": "project",
+      "path": "../BluePrintCore/BluePrintCore.csproj",
+      "msbuildProject": "../BluePrintCore/BluePrintCore.csproj"
+    },
+    "BluePrintDAL/1.0.0": {
+      "type": "project",
+      "path": "../BluePrintDAL/BluePrintDAL.csproj",
+      "msbuildProject": "../BluePrintDAL/BluePrintDAL.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "BluePrintBL >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "/Users/nitinpradhan/.nuget/packages/": {}
+    "C:\\Users\\PANKAJ\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nitinpradhan/Documents/Project/BluePrint-DotNet/BluePrintAPI/BluePrintAPI.csproj",
+      "projectUniqueName": "F:\\Project-API\\BluePrint-DotNet\\BluePrintAPI\\BluePrintAPI.csproj",
       "projectName": "BluePrintAPI",
-      "projectPath": "/Users/nitinpradhan/Documents/Project/BluePrint-DotNet/BluePrintAPI/BluePrintAPI.csproj",
-      "packagesPath": "/Users/nitinpradhan/.nuget/packages/",
-      "outputPath": "/Users/nitinpradhan/Documents/Project/BluePrint-DotNet/BluePrintAPI/obj/",
+      "projectPath": "F:\\Project-API\\BluePrint-DotNet\\BluePrintAPI\\BluePrintAPI.csproj",
+      "packagesPath": "C:\\Users\\PANKAJ\\.nuget\\packages\\",
+      "outputPath": "F:\\Project-API\\BluePrint-DotNet\\BluePrintAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/nitinpradhan/.config/NuGet/NuGet.Config"
+        "C:\\Users\\PANKAJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\Project-API\\BluePrint-DotNet\\BluePrintBL\\BluePrintBL.csproj": {
+              "projectPath": "F:\\Project-API\\BluePrint-DotNet\\BluePrintBL\\BluePrintBL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -61,7 +129,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.104/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

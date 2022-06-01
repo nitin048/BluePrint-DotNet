@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "BluePrintCore/1.0.0": {
+        "dependencies": {
+          "BluePrintDAL": "1.0.0"
+        },
+        "runtime": {
+          "BluePrintCore.dll": {}
+        }
+      },
+      "BluePrintDAL/1.0.0": {
+        "runtime": {
+          "BluePrintDAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BluePrintCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BluePrintDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

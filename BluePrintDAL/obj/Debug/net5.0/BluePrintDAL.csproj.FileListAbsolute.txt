@@ -1,0 +1,12 @@
+F:\Project-API\BluePrint-DotNet\BluePrintDAL\bin\Debug\net5.0\BluePrintDAL.deps.json
+F:\Project-API\BluePrint-DotNet\BluePrintDAL\bin\Debug\net5.0\BluePrintDAL.dll
+F:\Project-API\BluePrint-DotNet\BluePrintDAL\bin\Debug\net5.0\BluePrintDAL.pdb
+F:\Project-API\BluePrint-DotNet\BluePrintDAL\obj\Debug\net5.0\BluePrintDAL.csproj.AssemblyReference.cache
+F:\Project-API\BluePrint-DotNet\BluePrintDAL\obj\Debug\net5.0\BluePrintDAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Project-API\BluePrint-DotNet\BluePrintDAL\obj\Debug\net5.0\BluePrintDAL.AssemblyInfoInputs.cache
+F:\Project-API\BluePrint-DotNet\BluePrintDAL\obj\Debug\net5.0\BluePrintDAL.AssemblyInfo.cs
+F:\Project-API\BluePrint-DotNet\BluePrintDAL\obj\Debug\net5.0\BluePrintDAL.csproj.CoreCompileInputs.cache
+F:\Project-API\BluePrint-DotNet\BluePrintDAL\obj\Debug\net5.0\BluePrintDAL.dll
+F:\Project-API\BluePrint-DotNet\BluePrintDAL\obj\Debug\net5.0\refint\BluePrintDAL.dll
+F:\Project-API\BluePrint-DotNet\BluePrintDAL\obj\Debug\net5.0\BluePrintDAL.pdb
+F:\Project-API\BluePrint-DotNet\BluePrintDAL\obj\Debug\net5.0\ref\BluePrintDAL.dll

@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.810.22
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrintAPI", "BluePrintAPI\BluePrintAPI.csproj", "{B6A17778-6FCB-4E39-A582-DEA5071A829F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BluePrintAPI", "BluePrintAPI\BluePrintAPI.csproj", "{B6A17778-6FCB-4E39-A582-DEA5071A829F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrintBL", "BluePrintBL\BluePrintBL.csproj", "{72FC2FF9-6D4F-461C-8F78-6D6B82500162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrintCore", "BluePrintCore\BluePrintCore.csproj", "{2371F6A3-08E3-4EF0-8F92-16ED4565B863}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrintDAL", "BluePrintDAL\BluePrintDAL.csproj", "{962EDDE1-90F7-43D6-8477-386D58E71C53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{B6A17778-6FCB-4E39-A582-DEA5071A829F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6A17778-6FCB-4E39-A582-DEA5071A829F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6A17778-6FCB-4E39-A582-DEA5071A829F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72FC2FF9-6D4F-461C-8F78-6D6B82500162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72FC2FF9-6D4F-461C-8F78-6D6B82500162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72FC2FF9-6D4F-461C-8F78-6D6B82500162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72FC2FF9-6D4F-461C-8F78-6D6B82500162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2371F6A3-08E3-4EF0-8F92-16ED4565B863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2371F6A3-08E3-4EF0-8F92-16ED4565B863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2371F6A3-08E3-4EF0-8F92-16ED4565B863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2371F6A3-08E3-4EF0-8F92-16ED4565B863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962EDDE1-90F7-43D6-8477-386D58E71C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962EDDE1-90F7-43D6-8477-386D58E71C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962EDDE1-90F7-43D6-8477-386D58E71C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962EDDE1-90F7-43D6-8477-386D58E71C53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
