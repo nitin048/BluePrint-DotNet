@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "6299bf618e600fd29d91705c"
+  },
+  "firstname": "vikas",
+  "lastname": "raut",
+  "email": "vikas@gmail.com",
+  "mobile": {
+    "$numberLong": "9028502597"
+  },
+  "password": "abc",
+  "role": "6299bfe28e600fd29d917064"
+}]
