@@ -1,4 +1,6 @@
 using BluePrintApi.Repository;
+using BluePrintBL.Services;
+using BluePrintCore.Services;
 using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);

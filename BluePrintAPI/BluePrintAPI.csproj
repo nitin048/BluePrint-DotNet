@@ -13,11 +13,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BluePrintBL\BluePrintBL.csproj" />
+    <Folder Include="MongoDb Script\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="MongoDb Script\" />
+    <ProjectReference Include="..\BluePrintBL\BluePrintBL.csproj" />
+    <ProjectReference Include="..\BluePrintCore\BluePrintCore.csproj" />
   </ItemGroup>
 
 </Project>

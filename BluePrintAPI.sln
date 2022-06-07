@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrintApi", "BluePrintApi\BluePrintApi.csproj", "{ED5131E1-A1DC-4328-9144-91310F9B54A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BluePrintApi", "BluePrintApi\BluePrintApi.csproj", "{ED5131E1-A1DC-4328-9144-91310F9B54A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrintBL", "BluePrintBL\BluePrintBL.csproj", "{2ED0A1F6-91D9-4003-8964-D67C47DE6CE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BluePrintBL", "BluePrintBL\BluePrintBL.csproj", "{2ED0A1F6-91D9-4003-8964-D67C47DE6CE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrintCore", "BluePrintCore\BluePrintCore.csproj", "{C4884B1F-E97A-48CA-BE3A-ED8F1396C4A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BluePrintCore", "BluePrintCore\BluePrintCore.csproj", "{C4884B1F-E97A-48CA-BE3A-ED8F1396C4A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrintDAL", "BluePrintDAL\BluePrintDAL.csproj", "{2D0FECFF-84A6-41EF-A413-4735ED2897A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BluePrintDomain", "BluePrintDAL\BluePrintDomain.csproj", "{2D0FECFF-84A6-41EF-A413-4735ED2897A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
