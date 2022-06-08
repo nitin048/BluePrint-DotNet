@@ -1,5 +1,6 @@
 ﻿using BluePrintApi.Model;
 using BluePrintApi.Repository;
+using BluePrintCore.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
