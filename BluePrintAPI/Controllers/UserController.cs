@@ -26,5 +26,13 @@ namespace BluePrintApi.Controllers
             return Ok(result);
         }
 
+        [HttpPost("create")]
+        public async Task<IActionResult> CreateUser(User user)
+        {
+            
+            _userRepository.CreateUser(user);
+
+            return Ok();
+        }
     }
 }

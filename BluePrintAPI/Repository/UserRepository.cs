@@ -18,5 +18,9 @@ namespace BluePrintApi.Repository
         {
             return  _users.Find(_ => _.Email == uname && _.Password == pwd).FirstOrDefault();
         }
+        public void CreateUser(User user)
+        {
+            _users.InsertOne(user);
+        }
     }
 }

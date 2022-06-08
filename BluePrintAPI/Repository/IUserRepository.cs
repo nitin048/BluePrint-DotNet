@@ -5,5 +5,6 @@ namespace BluePrintApi.Repository
     public interface IUserRepository
     {
         Task<User> GetUser(string uname, string pwd);
+        public void CreateUser(User user);
     }
 }
