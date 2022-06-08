@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace BluePrintBL.Services
 {
+
 	public class UserRepository : IUserRepository
 	{
 		private readonly IMongoCollection<UserModel> _users;
@@ -27,7 +28,8 @@ namespace BluePrintBL.Services
 
 		public async Task<UserModel> GetUser(string uname, string pwd)
 		{
-			return _users.Find(_ => _.Email == uname && _.Password == pwd).FirstOrDefault();
+			return await _users.Find(_ => _.Email == uname && _.Password == pwd).FirstOrDefaultAsync();
+			
 		}
 	}
 }	

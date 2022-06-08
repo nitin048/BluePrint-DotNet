@@ -31,7 +31,7 @@ namespace BluePrintApi.Controllers
         public async Task<IActionResult> CreateUser(User user)
         {
             
-            _userRepository.CreateUser(user);
+            //_userRepository.CreateUser(user);
 
             return Ok();
         }

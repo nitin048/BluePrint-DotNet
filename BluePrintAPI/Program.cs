@@ -1,5 +1,6 @@
 using BluePrintApi.Repository;
 using BluePrintBL.Services;
+using BluePrintCore.DbContext;
 using BluePrintCore.Services;
 using MongoDB.Driver;
 
@@ -7,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddTransient<IUserRepository, UserRepository>();
-builder.Services.AddSingleton<IMongoClient, MongoClient>
+builder.Services.AddSingleton(typeof(IDbContext<>), typeof(DbContext<>));
+    builder.Services.AddSingleton<IMongoClient, MongoClient>
     (
         sp => new MongoClient(builder.Configuration.GetConnectionString("MongoDb"))
     );
