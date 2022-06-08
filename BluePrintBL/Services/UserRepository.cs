@@ -1,35 +1,52 @@
 ﻿using BluePrintCore.Services;
-using BluePrintDAL.Model;
 using MongoDB.Driver;
+using BluePrintCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BluePrintCore.DbContext;
+using BluePrintDomain.Model;
 
 namespace BluePrintBL.Services
 {
 
 	public class UserRepository : IUserRepository
 	{
-		private readonly IMongoCollection<UserModel> _users;
-		public UserRepository(IMongoClient client)
+		private readonly IDbContext<User> _users;
+		public UserRepository(IDbContext<User> dbContext)
 		{
-			var database = client.GetDatabase("BluePrint");
-			var collection = database.GetCollection<UserModel>(nameof(UserModel));
 
-			_users = collection;
+
+			_users = dbContext;
+
 		}
 
 		public void Dispose()
 		{
-			throw new NotImplementedException();
+		
 		}
 
-		public async Task<UserModel> GetUser(string uname, string pwd)
+		public async Task<User> GetUser(string uname, string pwd)
 		{
-			return await _users.Find(_ => _.Email == uname && _.Password == pwd).FirstOrDefaultAsync();
+			return await _users.Collection().Find(_ => _.Email == uname && _.Password == pwd).FirstOrDefaultAsync();
 			
 		}
+
+		
+		public void CreateUser(User user)
+        {
+            try
+            {
+				_users.create(user);
+			}
+            catch (Exception ex)
+            {
+
+            }
+			//_users.Collection().InsertOne(user);
+			
+        }
 	}
 }	

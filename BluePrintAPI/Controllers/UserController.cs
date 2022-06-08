@@ -1,6 +1,6 @@
 ﻿
 using BluePrintCore.Services;
-using BluePrintDAL.Model;
+using BluePrintDomain.Model;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,7 +20,7 @@ namespace BluePrintApi.Controllers
         }
 
         [HttpPost("authenticateuser")]
-        public async Task<IActionResult> AuthenticateUser(UserModel user)
+        public async Task<IActionResult> AuthenticateUser(User user)
         {
             var result = await _userRepository.GetUser(user.Email,user.Password);
 
@@ -28,10 +28,10 @@ namespace BluePrintApi.Controllers
         }
 
         [HttpPost("create")]
-        public async Task<IActionResult> CreateUser(UserModel user)
+        public async Task<IActionResult> CreateUser(User user)
         {
             
-            //_userRepository.CreateUser(user);
+            _userRepository.CreateUser(user);
 
             return Ok();
         }

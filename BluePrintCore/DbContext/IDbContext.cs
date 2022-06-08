@@ -5,6 +5,7 @@ namespace BluePrintCore.DbContext
 	public interface IDbContext<T>
 	{
 		IMongoCollection<T> Collection();
+		void create(T userdate);
 	}
 }
 

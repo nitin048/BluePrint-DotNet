@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BluePrintDAL.Model
+namespace BluePrintDomain.Model
 {
 	    
-    public class UserModel
+    public class User
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]

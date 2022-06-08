@@ -15,13 +15,19 @@ namespace BluePrintCore.DbContext
 		{
 			var database = client.GetDatabase("BluePrint");
 			var collection = database.GetCollection<T>(nameof(T));
-
+			
 			_users = collection;
 		}
 
         public IMongoCollection<T> Collection()
         {
 			return _users;
+        }
+
+		public void create(T userdata)
+        {
+			var name = nameof(T);
+			_users.InsertOne(userdata);
         }
     }
 }
